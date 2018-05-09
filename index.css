@@ -1,0 +1,259 @@
+html {
+    background-image: linear-gradient(#8b9da9, #fff6e4);
+    box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.macbook {
+    background-color: #082746;
+    background-image: linear-gradient(70deg, transparent 67%, hsla(0,0%,100%,.05) 67%, hsla(0,0%,100%,.025)),
+                      linear-gradient(#ddd 11px, transparent 11px),
+                      linear-gradient(#132d4e, #4f7d90);
+    border-radius: 8px 8px 0 0;
+    box-shadow: inset 0 1px 1px 1px #000,
+                inset 0 0 0 9px #111,
+                0 0 0 1px #ccc,
+                0 0 1px 2px hsla(0,0%,0%,.4),
+                0 0 50px hsla(0,0%,0%,.3);
+    height: 100px;
+    display: block;
+    left: 50%;
+    margin: -50px -75px;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+}
+.macbook:after {
+    background-color: #ddd;
+    background-image: linear-gradient(90deg, hsla(0,0%,0%,.3), hsla(0,0%,100%,.4) 2%, hsla(0,0%,100%,.1) 5%, hsla(0,0%,0%,.2) 95%, hsla(0,0%,100%,.2) 98%, hsla(0,0%,0%,.4));
+    border-bottom: 3px solid hsla(0,0%,40%,.75);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 7px hsla(0,0%,0%,.1);
+    content: '';
+    height: 7px;
+    left: -22px;
+    position: absolute;
+    right: -22px;
+    top: 100%;
+}
+.macbook:before {
+    background-color: #222;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 0 hsla(0,0%,100%,.1),
+                -13px 96px 0 -1px #888,
+                -13px 97px 0 -1px #888,
+                -11px 97px 0 #888,
+                -9px 97px 0 #888,
+                -7px 97px 0 #888,
+                -5px 97px 0 #888,
+                -3px 97px 0 #888,
+                -1px 97px 0 #888,
+                1px 97px 0 #888,
+                3px 97px 0 #888,
+                5px 97px 0 #888,
+                7px 97px 0 #888,
+                9px 97px 0 #888,
+                11px 97px 0 #888,
+                13px 97px 0 -1px #888,
+                13px 96px 0 -1px #888,
+                80px 99px 0 -1px #666,
+                81px 99px 0 -1px #666,
+                82px 99px 0 -1px #666,
+                83px 99px 0 -1px #666,
+                84px 99px 0 -1px #666,
+                85px 99px 0 -1px #666;
+    content: '';
+    height: 3px;
+    left: 50%;
+    margin-left: -2px;
+    position: absolute;
+    top: 3px;
+    width: 3px;
+    z-index: 1;
+}
+.sky {
+  height: 250px;
+  background: #007fd5;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: sky_background 50s ease-out infinite;
+  -moz-animation: sky_background 50s ease-out infinite;
+  -o-animation: sky_background 50s ease-out infinite;
+  animation: sky_background 50s ease-out infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_one {
+  background: url("http://demo.lanrenzhijia.com/2016/cloud1111/images/cloud_one.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_one 50s linear infinite;
+  -moz-animation: cloud_one 50s linear infinite;
+  -o-animation: cloud_one 50s linear infinite;
+  animation: cloud_one 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_two {
+  background: url("http://demo.lanrenzhijia.com/2016/cloud1111/images/cloud_two.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_two 75s linear infinite;
+  -moz-animation: cloud_two 75s linear infinite;
+  -o-animation: cloud_two 75s linear infinite;
+  animation: cloud_two 75s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_three {
+  background: url("http://demo.lanrenzhijia.com/2016/cloud1111/images/cloud_three.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_three 100s linear infinite;
+  -moz-animation: cloud_three 100s linear infinite;
+  -o-animation: cloud_three 100s linear infinite;
+  animation: cloud_three 100s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes sky_background {
+  0% {
+	background: #007fd5;
+	color: #007fd5
+  }
+  50% {
+	background: #000;
+	color: #a3d9ff
+  }
+  100% {
+	background: #007fd5;
+	color: #007fd5
+  }
+}
+@-moz-keyframes sky_background {
+  0% {
+	background: #007fd5;
+	color: #007fd5
+  }
+  50% {
+	background: #000;
+	color: #a3d9ff
+  }
+  100% {
+	background: #007fd5;
+	color: #007fd5
+  }
+}
+@keyframes sky_background {
+  0% {
+	background: #007fd5;
+	color: #007fd5
+  }
+  50% {
+	background: #000;
+	color: #a3d9ff
+  }
+  100% {
+	background: #007fd5;
+	color: #007fd5
+  }
+}
+
+@-webkit-keyframes cloud_one {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@-moz-keyframes cloud_one {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@keyframes cloud_one {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@-moz-keyframes cloud_two {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@keyframes cloud_two {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_three {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@-moz-keyframes cloud_three {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@keyframes cloud_three {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}

@@ -1,0 +1,11 @@
+{  
+  "name": "Fancy-Box",
+  "version": "0.0.1",
+  "description": "Fancy Box",
+  "repository": "https://github.com/tqiao/fancy-box",
+  "main": "./index.js",
+  "devDependencies": {
+    "forever": "^0.15.3",
+    "express": "4.16.3" 
+  }
+}
